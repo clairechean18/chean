@@ -54,13 +54,29 @@
     <div>
         <h2>Forms and Input</h2>
         <form action="#" method="post">
-            <label for="userInput">Type something: </label>
+            <label for="userInput">Email: </label>
             <input type="text" id="userInput" name="userInput">
-            <input type="submit" value="Submit">
+            <label for="pwd">Password:</label>
+            <input type="password" id="pass" name="pass" minlength="8">
+            <input type="submit" value="Submit"><br><br>
+
+            <input type="radio" id="stranger1" name="stranger" value="STRANGER1">
+            <label for="stranger1">Stranger Things 1</label><br>
+            <input type="radio" id="stranger2" name="stranger" value="STRANGER2">
+            <label for="stranger2">Stranger Things 2</label><br>
+            <input type="radio" id="stranger3" name="stranger" value="STRANGER3">
+            <label for="stranger3">Stranger Things 3</label><br><br>
+            <input type="checkbox" name="box" value="check">This is a checkbox<br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="female">Female</option>
+                <option value="Male">Male</option>
+                <option value="not">Prefer not to say</option>
+            </select>
         </form>
 
         <h2>Interactive Elements and Images</h2>
-        <input type="checkbox" name="vehicle" value="Car">This is a checkbox<br>
         <audio src="assets/videoplayback.m4a" controls></audio> 
         <video src="assets/Nobodys Better.mp4" controls></video>
         <img src="assets/cat.jpg" alt="cat">
